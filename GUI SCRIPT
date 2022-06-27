@@ -1,0 +1,15 @@
+--GUI
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Ray's Mode - Classic", "BloodTheme")
+--MAIN
+local Tab = Window:NewTab("Spawn Item")
+local SSection = Tab:NewSection("Spawn Item")
+--BUTTONS
+
+--SpawnItem
+SSection:NewButton("", "", function()
+local A_1 = "Nuke"
+local Event = game:GetService("ReplicatedStorage").SpawnObject
+Event:FireServer(A_1)
+end)
+
