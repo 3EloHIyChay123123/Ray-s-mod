@@ -1,0 +1,7 @@
+
+for count = 1, 10000 do
+local Event = game:GetService("ReplicatedStorage").VotingInProgress.VoteEvent
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage").MapVotingInProgress.VoteEvent
+Event:FireServer()
+end
